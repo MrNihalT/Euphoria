@@ -6,19 +6,20 @@ hdbutton.forEach((button) => {
     });
 });
 
-let navbar = document.querySelector(".hide");
-let MenuButton = document.getElementById("menu-button");
 
-MenuButton.addEventListener("click", () => {
-    navbar.classList.add("menu-list");
-});
 
 document.addEventListener("DOMContentLoaded", () => {
     const slides = document.querySelectorAll(".slide");
     const leftArrow = document.querySelector(".left-arrow");
     const rightArrow = document.querySelector(".right-arrow");
+    const slidePercentage = document.querySelector(".slide-percentage");
 
     let currentIndex = 0;
+
+    function updateSlidePercentage() {
+        let percentage = ((currentIndex + 1) / slides.length) * 100;
+        slidePercentage.style.width = `${percentage}%`;
+    }
 
     function showSlide(index) {
         slides.forEach((slide, i) => {
@@ -27,6 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 slide.classList.add("active");
             }
         });
+        updateSlidePercentage();
     }
 
     rightArrow.addEventListener("click", () => {
@@ -43,4 +45,6 @@ document.addEventListener("DOMContentLoaded", () => {
         currentIndex = (currentIndex + 1) % slides.length;
         showSlide(currentIndex);
     }, 5000);
+
+    updateSlidePercentage(); 
 });

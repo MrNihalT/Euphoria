@@ -232,6 +232,7 @@ header {
     position: relative;
     overflow: hidden;
 
+
     .spotlight-slider {
         width: 100%;
         height: 100%;
@@ -323,7 +324,7 @@ header {
                     font-size: 32px;
                     line-height: 47.21px;
                     letter-spacing: 0.31px;
-                    margin-bottom: 40px;
+                    margin-bottom: 50px;
                 }
 
                 .shop-now {
@@ -345,12 +346,8 @@ header {
                     gap: 12px;
                     background: #FFFFFF;
                     cursor: pointer;
+                    transition: all 0.3s ease;
 
-                    transition: background 0.3s ease;
-
-                    & &:hover {
-                        background: #cc5200;
-                    }
                 }
 
                 &.active {
@@ -359,6 +356,99 @@ header {
             }
 
 
+        }
+    }
+
+    .slider-dots {
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        width: 126px;
+        // top: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 10px;
+        /* margin-top: -180px; */
+        z-index: 120;
+        height: 10px;
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.3);
+
+
+        .slide-percentage {
+            transition: all 0.3s ease;
+            width: 50%;
+            height: 100%;
+            background: #FFFFFF;
+            opacity: 1;
+            border-radius: 12px;
+
+        }
+    }
+
+}
+
+#deals {
+    padding: 9% 0;
+
+    .deal-section {
+        display: flex;
+        justify-content: space-between;
+
+        .deal-banner {
+            width: 48%;
+            height: 356px;
+            border-radius: 12px;
+            background-repeat: no-repeat;
+            box-shadow: 2px 2px 10px 0px #00000066;
+
+            padding: 60px 30px;
+
+
+            h3 {
+                font-family: "Montserrat", serif;
+                font-weight: 800;
+                font-size: 18px;
+                line-height: 30.07px;
+                letter-spacing: 0.25px;
+                color: #FFFFFF;
+                margin-bottom: 30px;
+            }
+
+            h1 {
+                font-family: "Montserrat", serif;
+                font-weight: 700;
+                margin-bottom: 20px;
+                font-size: 34px;
+                line-height: 45.1px;
+                letter-spacing: 0px;
+                max-width: 300px;
+                color: #FFFFFF;
+            }
+
+            p.offer {
+                font-family: "Montserrat", serif;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 25.06px;
+                letter-spacing: 0.25px;
+                color: #FFFFFF;
+                margin-bottom: 40px;
+            }
+
+            button.explore-deals {
+                font-family: "Montserrat", serif;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 30.13px;
+                letter-spacing: 0px;
+                text-decoration: underline;
+                text-decoration-style: solid;
+                text-decoration-offset: Auto;
+                text-decoration-thickness: .5px;
+                color: #FFFFFF;
+                cursor: pointer;
+            }
         }
     }
 
