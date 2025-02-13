@@ -152,6 +152,119 @@ header nav .menubar {
   display: none;
 }
 
+#spotlight {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+#spotlight .spotlight-slider {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+}
+#spotlight .spotlight-slider .left-arrow,
+#spotlight .spotlight-slider .right-arrow {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+#spotlight .spotlight-slider .left-arrow img,
+#spotlight .spotlight-slider .right-arrow img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+#spotlight .spotlight-slider .left-arrow:hover img,
+#spotlight .spotlight-slider .right-arrow:hover img {
+  transform: scale(1.1);
+}
+#spotlight .spotlight-slider .left-arrow {
+  left: 20px;
+}
+#spotlight .spotlight-slider .right-arrow {
+  right: 20px;
+}
+#spotlight .spotlight-slider .spotlight-content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+#spotlight .spotlight-slider .spotlight-content .slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  transition: opacity 0.6s ease-in-out;
+  opacity: 0;
+  padding: 8% 0 0 12%;
+}
+#spotlight .spotlight-slider .spotlight-content .slide h3 {
+  font-family: "Causten", serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 37.77px;
+  letter-spacing: 0.16px;
+  color: #FFFFFF;
+  margin-bottom: 45px;
+}
+#spotlight .spotlight-slider .spotlight-content .slide h1 {
+  font-family: "Causten", serif;
+  font-weight: 900;
+  font-size: 78px;
+  line-height: 93.62px;
+  letter-spacing: 0.31px;
+  color: #FFFFFF;
+  max-width: 400px;
+  margin-bottom: 45px;
+}
+#spotlight .spotlight-slider .spotlight-content .slide .spotlight-items {
+  font-family: "Causten", serif;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 47.21px;
+  letter-spacing: 0.31px;
+  margin-bottom: 40px;
+}
+#spotlight .spotlight-slider .spotlight-content .slide .shop-now {
+  font-family: "Causten", serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28.8px;
+  letter-spacing: 0%;
+  color: #3C4242;
+  text-align: center;
+  width: 250px;
+  height: 61px;
+  border-radius: 8px;
+  padding-top: 16px;
+  padding-right: 72px;
+  padding-bottom: 16px;
+  padding-left: 72px;
+  gap: 12px;
+  background: #FFFFFF;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+#spotlight .spotlight-slider .spotlight-content .slide .shop-now #spotlight .spotlight-slider .spotlight-content .slide .shop-now:hover {
+  background: #cc5200;
+}
+#spotlight .spotlight-slider .spotlight-content .slide.active {
+  opacity: 1;
+}
+
 @media all and (max-width: 1280px) {
   header nav .header-middle ul.nav-links {
     gap: 15px;
