@@ -793,6 +793,68 @@ header {
             }
         }
     }
+
+    div.brands {
+        height: 357px;
+        background: #3C4242;
+        border: 1.07px solid #323232;
+        border-radius: 12px;
+        margin-bottom: 80px;
+        text-align: center;
+        padding: 40px 0;
+
+        h1 {
+            font-family: "Causten", serif;
+            font-weight: 800;
+            font-size: 50px;
+            line-height: 49.1px;
+            letter-spacing: 0%;
+            text-align: center;
+            color: #FFFFFF;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-family: "Causten", serif;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 26.4px;
+            letter-spacing: 0%;
+            text-align: center;
+            color: #FFFFFF;
+            margin-bottom: 65px;
+
+            span {
+                font-family: "Causten", serif;
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 26.4px;
+                letter-spacing: 0%;
+                text-align: center;
+                color: #FBD103;
+            }
+        }
+
+        ul {
+            display: flex;
+            gap: 20px;
+            justify-self: center;
+
+            li {
+                align-content: center;
+                border-radius: 12px;
+                width: 177px;
+                height: 85px;
+                background: #FFFFFF;
+
+                a {
+
+                    img {}
+                }
+            }
+        }
+    }
+
 }
 
 @media all and (max-width:1280px) {
