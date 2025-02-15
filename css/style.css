@@ -24,6 +24,9 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
+* ::-webkit-scrollbar {
+  display: none;
+}
 
 ol,
 ul {
@@ -203,7 +206,7 @@ header nav .menubar {
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center top;
   display: flex;
   flex-direction: column;
   transition: opacity 0.6s ease-in-out;
@@ -285,7 +288,7 @@ header nav .menubar {
 }
 
 #deals {
-  padding: 9% 0;
+  padding: 140px 0 50px;
 }
 #deals .deal-section {
   display: flex;
@@ -339,6 +342,276 @@ header nav .menubar {
   text-decoration-thickness: 0.5px;
   color: #FFFFFF;
   cursor: pointer;
+}
+#deals h3.new-arrivalt {
+  display: flex;
+  margin: 100px 0 30px 0;
+  font-family: "Montserrat", serif;
+  color: #3C4242;
+  font-weight: 650;
+  font-size: 34px;
+  line-height: 33.5px;
+  letter-spacing: 2%;
+}
+#deals h3.new-arrivalt div {
+  height: 30px;
+  width: 6px;
+  background: #8A33FD;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+#deals .new-arrival {
+  align-items: center;
+  display: flex;
+  margin-bottom: 100px;
+}
+#deals .new-arrival button.new-arrival-left {
+  margin-right: 20px;
+}
+#deals .new-arrival button.new-arrival-right {
+  margin-left: 20px;
+}
+#deals .new-arrival div.new-arrival-collection {
+  overflow: scroll;
+  height: 360px;
+  padding: 0 5px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: 0.3s all ease;
+}
+#deals .new-arrival div.new-arrival-collection div.new-arrival-item {
+  transition: 0.3s all ease;
+}
+#deals .new-arrival div.new-arrival-collection div.new-arrival-item a {
+  width: 262.8149414063px;
+  height: 262.8149414063px;
+  border-radius: 12px;
+  display: block;
+}
+#deals .new-arrival div.new-arrival-collection div.new-arrival-item a img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+#deals .new-arrival div.new-arrival-collection div.new-arrival-item a h3 {
+  font-family: "Causten", serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 1%;
+  color: #3C4242;
+  margin-top: 25px;
+}
+#deals .deal-fashion {
+  margin: 50px 0;
+  display: flex;
+  height: 639.7233886719px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+#deals .deal-fashion .fashion-left {
+  position: relative;
+  width: 49%;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  color: white;
+  /* Ensure text color is visible */
+  z-index: 1;
+  /* Keep text above */
+}
+#deals .deal-fashion .fashion-left ::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../assets/images/bg-4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: scaleX(-1);
+  /* Mirror only the background */
+  z-index: -1;
+  /* Send background behind text */
+}
+#deals .deal-fashion .fashion-left h1 {
+  font-family: "Montserrat", serif;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 50px;
+  letter-spacing: 0.21px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+#deals .deal-fashion .fashion-left p {
+  margin-bottom: 50px;
+  font-family: "Causten", serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+}
+#deals .deal-fashion .fashion-left button {
+  width: 168px;
+  height: 46px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  gap: 12px;
+  padding: 12px 44px;
+  font-family: "Causten", serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21.6px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+#deals .deal-fashion .fashion-right {
+  width: 51%;
+  background: url(../assets/images/bg-5.jpg) no-repeat center top;
+  background-size: cover;
+  /* Ensure it fills the whole div */
+}
+
+#categories h3.new-arrivalt {
+  display: flex;
+  margin: 5px 0 70px 0;
+  font-family: "Montserrat", serif;
+  color: #3C4242;
+  font-weight: 650;
+  font-size: 34px;
+  line-height: 33.5px;
+  letter-spacing: 2%;
+}
+#categories h3.new-arrivalt div {
+  height: 30px;
+  width: 6px;
+  background: #8A33FD;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+#categories div.category-men {
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  justify-content: center;
+}
+#categories div.category-men div.category-item {
+  width: 270px;
+  height: 451px;
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+}
+#categories div.category-men div.category-item a {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+#categories div.category-men div.category-item a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+#categories div.category-men div.category-item a div.c-i-bottom {
+  margin-top: 15px;
+  height: 42px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#categories div.category-men div.category-item a div.c-i-bottom div.c-i-b-left p {
+  font-family: "Causten", serif;
+  font-weight: 700;
+  font-size: 17.88px;
+  line-height: 27.93px;
+  letter-spacing: -4%;
+  color: #2A2F2F;
+}
+#categories div.category-men div.category-item a div.c-i-bottom div.c-i-b-left span {
+  font-family: "Causten", serif;
+  font-weight: 500;
+  font-size: 13.41px;
+  line-height: 27.93px;
+  letter-spacing: -4%;
+  color: #7F7F7F;
+}
+#categories div.category-men div.category-item a div.c-i-bottom div.c-i-b-right button {
+  width: 17.8753471375;
+  color: #797979;
+  display: block;
+}
+#categories div.category-men div.category-item a div.c-i-bottom div.c-i-b-right button img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+#categories div.category-women {
+  margin-bottom: 80px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  justify-content: center;
+}
+#categories div.category-women div.category-item {
+  width: 270px;
+  height: 451px;
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+}
+#categories div.category-women div.category-item a {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+#categories div.category-women div.category-item a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+#categories div.category-women div.category-item a div.c-i-bottom {
+  margin-top: 15px;
+  height: 42px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#categories div.category-women div.category-item a div.c-i-bottom div.c-i-b-left p {
+  font-family: "Causten", serif;
+  font-weight: 700;
+  font-size: 17.88px;
+  line-height: 27.93px;
+  letter-spacing: -4%;
+  color: #2A2F2F;
+}
+#categories div.category-women div.category-item a div.c-i-bottom div.c-i-b-left span {
+  font-family: "Causten", serif;
+  font-weight: 500;
+  font-size: 13.41px;
+  line-height: 27.93px;
+  letter-spacing: -4%;
+  color: #7F7F7F;
+}
+#categories div.category-women div.category-item a div.c-i-bottom div.c-i-b-right button {
+  width: 17.8753471375;
+  color: #797979;
+  display: block;
+}
+#categories div.category-women div.category-item a div.c-i-bottom div.c-i-b-right button img {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 @media all and (max-width: 1280px) {

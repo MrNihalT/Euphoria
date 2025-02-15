@@ -6,8 +6,6 @@ hdbutton.forEach((button) => {
     });
 });
 
-
-
 document.addEventListener("DOMContentLoaded", () => {
     const slides = document.querySelectorAll(".slide");
     const leftArrow = document.querySelector(".left-arrow");
@@ -46,5 +44,21 @@ document.addEventListener("DOMContentLoaded", () => {
         showSlide(currentIndex);
     }, 5000);
 
-    updateSlidePercentage(); 
+    updateSlidePercentage();
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const collection = document.querySelector(".new-arrival-collection");
+    const leftButton = document.querySelector(".new-arrival-left");
+    const rightButton = document.querySelector(".new-arrival-right");
+
+    const scrollAmount = 500; // Adjust this value for how much it should scroll
+
+    rightButton.addEventListener("click", () => {
+        collection.scrollBy({ left: scrollAmount, behavior: "smooth" });
+    });
+
+    leftButton.addEventListener("click", () => {
+        collection.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+    });
 });
