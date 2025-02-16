@@ -43,6 +43,10 @@ body {
   overflow: hidden;
 }
 
+.boundry {
+  padding: 0 70px;
+}
+
 header {
   height: 108px;
   align-content: center;
@@ -684,6 +688,7 @@ header nav .menubar {
   width: 282px;
 }
 #categories div.limelight div.limelight-container div.limelight-items div.top button.wishlist-btn {
+  cursor: pointer;
   position: absolute;
   width: 32.3592414856px;
   height: 32.3592414856px;
@@ -808,6 +813,164 @@ header nav .menubar {
   width: 7.73px;
   height: 7.73px;
   border-radius: 50%;
+}
+
+footer {
+  background: #3C4242;
+  padding: 59px 0;
+}
+footer div.footer-items {
+  margin-bottom: 20px;
+}
+footer div.footer-items ul {
+  display: flex;
+  justify-content: space-between;
+}
+footer div.footer-items ul li {
+  display: flex;
+  flex-direction: column;
+}
+footer div.footer-items ul li h3 {
+  margin-bottom: 20px;
+  font-family: "Montserrat", serif;
+  font-weight: 600;
+  font-size: 28.58px;
+  line-height: 61.99px;
+  letter-spacing: 0%;
+  color: #F6F6F6;
+}
+footer div.footer-items ul li a {
+  font-family: "Montserrat", serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 39.04px;
+  letter-spacing: 0%;
+  color: #F6F6F6;
+}
+footer div.footer-connect {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+footer div.footer-connect div.social-media {
+  gap: 9px;
+  display: flex;
+}
+footer div.footer-connect div.social-media button {
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 37.0239982605px;
+  height: 37.0239982605px;
+  background: #F6F6F6;
+  border-radius: 10px;
+}
+footer div.footer-connect div.apps h3 {
+  font-family: "Causten", serif;
+  font-weight: 700;
+  font-size: 28.58px;
+  line-height: 61.99px;
+  letter-spacing: 0%;
+  color: #F6F6F6;
+  margin-bottom: 15px;
+}
+footer div.footer-connect div.apps div.app {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+footer div.footer-connect div.apps div.app a {
+  display: flex;
+}
+footer div.footer-connect div.apps div.app a img {
+  margin-right: 10px;
+}
+footer div.footer-connect div.apps div.app a div.right span {
+  font-family: "Montserrat", serif;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+}
+footer div.footer-connect div.apps div.app a div.right h3 {
+  font-family: "Montserrat", serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21.6px;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+  margin: 0;
+}
+footer div.popular-categories {
+  border-top: 1px solid rgba(190, 188, 189, 0.4);
+  border-bottom: 1px solid rgba(190, 188, 189, 0.4);
+  padding: 10px 0;
+}
+footer div.popular-categories div.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer div.popular-categories div.top div.left h3 {
+  font-family: "Causten", serif;
+  font-weight: 700;
+  font-size: 28.58px;
+  line-height: 57.16px;
+  letter-spacing: 0%;
+  color: #F6F6F6;
+}
+footer div.popular-categories div.top div.right button {
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+footer div.popular-categories div.top div.right button img.up-arrow {
+  transition: transform 0.3s ease-in-out;
+}
+footer div.popular-categories div.bottom-category {
+  display: none;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+footer div.popular-categories div.bottom-category ul {
+  transition: all 0.3 ease;
+  display: flex;
+  justify-content: space-between;
+}
+footer div.popular-categories div.bottom-category ul li {
+  display: flex;
+  flex-direction: column;
+}
+footer div.popular-categories div.bottom-category ul li h3 {
+  margin-bottom: 20px;
+  font-family: "Montserrat", serif;
+  font-weight: 600;
+  font-size: 28.58px;
+  line-height: 61.99px;
+  letter-spacing: 0%;
+  color: #F6F6F6;
+}
+footer div.popular-categories div.bottom-category ul li a {
+  font-family: "Montserrat", serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 39.04px;
+  letter-spacing: 0%;
+  color: #F6F6F6;
+}
+footer div.copyright {
+  margin-top: 49px;
+  text-align: center;
+}
+footer div.copyright span {
+  font-family: "Causten", serif;
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0%;
+  color: #FFFFFF;
 }
 
 @media all and (max-width: 1280px) {

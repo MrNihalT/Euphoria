@@ -48,6 +48,10 @@ body {
     overflow: hidden;
 }
 
+.boundry {
+    padding: 0 70px;
+}
+
 // h1 {
 //     font-family: "Core Sans AR", serif;
 // }
@@ -882,6 +886,7 @@ header {
                     }
 
                     button.wishlist-btn {
+                        cursor: pointer;
                         position: absolute;
                         width: 32.3592414855957px;
                         height: 32.3592414855957px;
@@ -1042,7 +1047,7 @@ header {
                 height: 7.73px;
                 border-radius: 50%;
                 background: #BEBCBD4D;
-                
+
             }
 
             div.active-i {
@@ -1056,7 +1061,219 @@ header {
 
 }
 
+footer {
+    background: #3C4242;
+    padding: 59px 0;
 
+    div.footer-items {
+        margin-bottom: 20px;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+
+            li {
+                display: flex;
+                flex-direction: column;
+
+                h3 {
+                    margin-bottom: 20px;
+                    font-family: 'Montserrat', serif;
+                    font-weight: 600;
+                    font-size: 28.58px;
+                    line-height: 61.99px;
+                    letter-spacing: 0%;
+                    color: #F6F6F6;
+                }
+
+                a {
+                    font-family: 'Montserrat', serif;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 39.04px;
+                    letter-spacing: 0%;
+                    color: #F6F6F6;
+                }
+            }
+        }
+    }
+
+    div.footer-connect {
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+
+        // align-items: end;
+        div.social-media {
+            gap: 9px;
+            display: flex;
+
+            button {
+
+                cursor: pointer;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                width: 37.02399826049805px;
+                height: 37.02399826049805px;
+                background: #F6F6F6;
+                border-radius: 10px;
+
+                &:hover {}
+
+                img {}
+            }
+
+
+        }
+
+        div.apps {
+
+
+            h3 {
+                font-family: "Causten", serif;
+                font-weight: 700;
+                font-size: 28.58px;
+                line-height: 61.99px;
+                letter-spacing: 0%;
+                color: #F6F6F6;
+                margin-bottom: 15px;
+            }
+
+            div.app {
+
+                display: flex;
+                // align-items: center;
+                justify-content: space-between;
+                gap: 30px;
+
+                a {
+                    display: flex;
+                    // align-items: center;
+
+                    img {
+                        margin-right: 10px;
+                    }
+
+                    div.right {
+                        span {
+                            font-family: 'Montserrat', serif;
+                            font-weight: normal;
+                            font-size: 10px;
+                            line-height: 12px;
+                            letter-spacing: 0%;
+                            color: #FFFFFF;
+                        }
+
+                        h3 {
+                            font-family: 'Montserrat', serif;
+                            font-weight: normal;
+                            font-size: 18px;
+                            line-height: 21.6px;
+                            letter-spacing: 0%;
+                            color: #FFFFFF;
+                            margin: 0;
+
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    div.popular-categories {
+
+        border-top: 1px solid rgba(190, 188, 189, 0.4);
+
+        border-bottom: 1px solid rgba(190, 188, 189, 0.4);
+
+
+        padding: 10px 0;
+
+        div.top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            div.left {
+                h3 {
+                    font-family: "Causten", serif;
+                    font-weight: 700;
+                    font-size: 28.58px;
+                    line-height: 57.16px;
+                    letter-spacing: 0%;
+                    color: #F6F6F6;
+                }
+            }
+
+            div.right {
+                button {
+                    transition: transform 0.3s ease-in-out;
+                    cursor: pointer;
+
+                    img.up-arrow {
+                        transition: transform 0.3s ease-in-out;
+
+                    }
+
+
+                }
+            }
+        }
+
+        div.bottom-category {
+            display: none;
+            transition: opacity 0.3s ease-in-out;
+            opacity: 0;
+
+            ul {
+                transition: all 0.3 ease;
+                display: flex;
+                justify-content: space-between;
+
+                li {
+                    display: flex;
+                    flex-direction: column;
+
+                    h3 {
+                        margin-bottom: 20px;
+                        font-family: 'Montserrat', serif;
+                        font-weight: 600;
+                        font-size: 28.58px;
+                        line-height: 61.99px;
+                        letter-spacing: 0%;
+                        color: #F6F6F6;
+                    }
+
+                    a {
+                        font-family: 'Montserrat', serif;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 39.04px;
+                        letter-spacing: 0%;
+                        color: #F6F6F6;
+                    }
+                }
+            }
+        }
+    }
+
+    div.copyright {
+        margin-top: 49px;
+        text-align: center;
+
+        span {
+            font-family: "Causten", serif;
+            font-weight: 100;
+            font-size: 18px;
+            line-height: 36px;
+            letter-spacing: 0%;
+            color: #FFFFFF;
+        }
+    }
+}
 
 @media all and (max-width:1280px) {
     header nav .header-middle ul.nav-links {

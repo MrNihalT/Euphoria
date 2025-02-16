@@ -70,3 +70,19 @@ wishlistBtn.forEach((Btn) => {
         Btn.style.background = Btn.style.background === "red" ? "white" : "red";
     });
 });
+
+let arrowIcon = document.querySelector(".up-arrow");
+let categoryButton = document.querySelector(".category-button");
+let bottomCategory = document.querySelector(".bottom-category");
+
+categoryButton.addEventListener("click", () => {
+    if (bottomCategory.style.display === "none") {
+        bottomCategory.style.display = "block";
+        setTimeout(() => (bottomCategory.style.opacity = "1"), 10);
+        arrowIcon.style.transform = "rotate(180deg)";
+    } else {
+        bottomCategory.style.opacity = "0";
+        setTimeout(() => (bottomCategory.style.display = "none"), 300);
+        arrowIcon.style.transform = "rotate(0deg)";
+    }
+});
