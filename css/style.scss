@@ -855,7 +855,208 @@ header {
         }
     }
 
+    div.limelight {
+        margin-bottom: 80px;
+
+        h3.new-arrivalt {}
+
+        div.limelight-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 36px;
+
+
+            div.limelight-items {
+                // width: 282px;
+                height: 441px;
+
+
+                div.top {
+                    margin-bottom: 25px;
+                    height: 370px;
+                    width: 282px;
+                    position: relative;
+
+                    img.main {
+                        width: 282px;
+                    }
+
+                    button.wishlist-btn {
+                        position: absolute;
+                        width: 32.3592414855957px;
+                        height: 32.3592414855957px;
+                        border-radius: 50%;
+                        background: #FFFFFF;
+                        top: 20px;
+                        right: 20px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transition: all 0.3s ease-out;
+
+                        img.wishlist {
+                            width: 13.752676963806152px;
+                            height: 12.224603652954102px;
+
+
+
+                        }
+                    }
+
+                }
+
+                div.bottom {
+                    width: 282px;
+
+                    a {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        div.limelight-bottom-l {
+                            h3 {
+                                font-family: "Causten", serif;
+                                font-weight: 600;
+                                font-size: 16px;
+                                line-height: 19.2px;
+                                letter-spacing: 0%;
+                                color: #3C4242;
+                            }
+
+                            p {
+                                font-family: "Causten", serif;
+                                font-weight: 500;
+                                font-size: 14px;
+                                line-height: 16.8px;
+                                letter-spacing: 0%;
+                                color: #807D7E;
+                            }
+                        }
+
+                        div.limelight-bottom-r {
+                            p {
+                                background: #F6F6F6;
+                                width: 82px;
+                                height: 36px;
+                                color: #3C4242;
+                                font-family: "Causten", serif;
+                                font-weight: 700;
+                                font-size: 14px;
+                                line-height: 16.8px;
+                                letter-spacing: 0%;
+                                text-align: center;
+                                align-content: center;
+                                justify-content: center;
+                                border-radius: 8px;
+                            }
+                        }
+                    }
+
+                }
+
+            }
+        }
+
+
+    }
+
+    div.feedback-section {
+        margin-bottom: 110px;
+
+        h3.new-arrivalt {}
+
+        div.feedbacks {
+            display: flex;
+            justify-content: space-between;
+            gap: 23px;
+
+            div.feedback-items {
+                width: 396.87408447265625px;
+                height: 292.00469970703125px;
+                gap: 20px;
+                border-radius: 10px;
+                border-width: 1.8px;
+                padding: 23.19px;
+
+                border: 1.8px solid #BEBCBD;
+
+                div.feedback-top {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 25px;
+
+                    div.left {
+                        img {
+                            width: 57.984375px;
+                            height: 57.984375px;
+                        }
+
+                        h3 {
+                            margin-top: 20px;
+                            font-family: "Causten", serif;
+                            font-weight: 500;
+                            font-size: 22px;
+                            line-height: 21.6px;
+                            letter-spacing: 2%;
+                            text-align: center;
+                        }
+                    }
+
+                    div.right {
+
+                        gap: 0px;
+                        align-items: baseline;
+
+                        display: flex;
+
+
+                        img {
+                            max-width: 131px;
+                            max-height: 23px;
+
+                        }
+                    }
+                }
+
+                div.feedback-bottom {
+                    p {
+                        font-family: "Causten", serif;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 16.8px;
+                        letter-spacing: 2%;
+                        color: #807D7E;
+                    }
+                }
+            }
+        }
+
+        div.scroll {
+            margin-top: 18px;
+            display: flex;
+            justify-self: center;
+            gap: 2px;
+
+            div.scroll-i {
+                width: 7.73px;
+                height: 7.73px;
+                border-radius: 50%;
+                background: #BEBCBD4D;
+                
+            }
+
+            div.active-i {
+                background: #3C4242;
+                width: 7.73px;
+                height: 7.73px;
+                border-radius: 50%;
+            }
+        }
+    }
+
 }
+
+
 
 @media all and (max-width:1280px) {
     header nav .header-middle ul.nav-links {

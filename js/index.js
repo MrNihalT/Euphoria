@@ -62,3 +62,11 @@ document.addEventListener("DOMContentLoaded", () => {
         collection.scrollBy({ left: -scrollAmount, behavior: "smooth" });
     });
 });
+
+let wishlistBtn = document.querySelectorAll(".wishlist-btn");
+
+wishlistBtn.forEach((Btn) => {
+    Btn.addEventListener("click", () => {
+        Btn.style.background = Btn.style.background === "red" ? "white" : "red";
+    });
+});

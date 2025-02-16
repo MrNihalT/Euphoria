@@ -663,6 +663,153 @@ header nav .menubar {
   height: 85px;
   background: #FFFFFF;
 }
+#categories div.limelight {
+  margin-bottom: 80px;
+}
+#categories div.limelight div.limelight-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 36px;
+}
+#categories div.limelight div.limelight-container div.limelight-items {
+  height: 441px;
+}
+#categories div.limelight div.limelight-container div.limelight-items div.top {
+  margin-bottom: 25px;
+  height: 370px;
+  width: 282px;
+  position: relative;
+}
+#categories div.limelight div.limelight-container div.limelight-items div.top img.main {
+  width: 282px;
+}
+#categories div.limelight div.limelight-container div.limelight-items div.top button.wishlist-btn {
+  position: absolute;
+  width: 32.3592414856px;
+  height: 32.3592414856px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-out;
+}
+#categories div.limelight div.limelight-container div.limelight-items div.top button.wishlist-btn img.wishlist {
+  width: 13.7526769638px;
+  height: 12.224603653px;
+}
+#categories div.limelight div.limelight-container div.limelight-items div.bottom {
+  width: 282px;
+}
+#categories div.limelight div.limelight-container div.limelight-items div.bottom a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#categories div.limelight div.limelight-container div.limelight-items div.bottom a div.limelight-bottom-l h3 {
+  font-family: "Causten", serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19.2px;
+  letter-spacing: 0%;
+  color: #3C4242;
+}
+#categories div.limelight div.limelight-container div.limelight-items div.bottom a div.limelight-bottom-l p {
+  font-family: "Causten", serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16.8px;
+  letter-spacing: 0%;
+  color: #807D7E;
+}
+#categories div.limelight div.limelight-container div.limelight-items div.bottom a div.limelight-bottom-r p {
+  background: #F6F6F6;
+  width: 82px;
+  height: 36px;
+  color: #3C4242;
+  font-family: "Causten", serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16.8px;
+  letter-spacing: 0%;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+#categories div.feedback-section {
+  margin-bottom: 110px;
+}
+#categories div.feedback-section div.feedbacks {
+  display: flex;
+  justify-content: space-between;
+  gap: 23px;
+}
+#categories div.feedback-section div.feedbacks div.feedback-items {
+  width: 396.8740844727px;
+  height: 292.004699707px;
+  gap: 20px;
+  border-radius: 10px;
+  border-width: 1.8px;
+  padding: 23.19px;
+  border: 1.8px solid #BEBCBD;
+}
+#categories div.feedback-section div.feedbacks div.feedback-items div.feedback-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+#categories div.feedback-section div.feedbacks div.feedback-items div.feedback-top div.left img {
+  width: 57.984375px;
+  height: 57.984375px;
+}
+#categories div.feedback-section div.feedbacks div.feedback-items div.feedback-top div.left h3 {
+  margin-top: 20px;
+  font-family: "Causten", serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 21.6px;
+  letter-spacing: 2%;
+  text-align: center;
+}
+#categories div.feedback-section div.feedbacks div.feedback-items div.feedback-top div.right {
+  gap: 0px;
+  align-items: baseline;
+  display: flex;
+}
+#categories div.feedback-section div.feedbacks div.feedback-items div.feedback-top div.right img {
+  max-width: 131px;
+  max-height: 23px;
+}
+#categories div.feedback-section div.feedbacks div.feedback-items div.feedback-bottom p {
+  font-family: "Causten", serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.8px;
+  letter-spacing: 2%;
+  color: #807D7E;
+}
+#categories div.feedback-section div.scroll {
+  margin-top: 18px;
+  display: flex;
+  justify-self: center;
+  gap: 2px;
+}
+#categories div.feedback-section div.scroll div.scroll-i {
+  width: 7.73px;
+  height: 7.73px;
+  border-radius: 50%;
+  background: rgba(190, 188, 189, 0.3019607843);
+}
+#categories div.feedback-section div.scroll div.active-i {
+  background: #3C4242;
+  width: 7.73px;
+  height: 7.73px;
+  border-radius: 50%;
+}
+
 @media all and (max-width: 1280px) {
   header nav .header-middle ul.nav-links {
     gap: 15px;
