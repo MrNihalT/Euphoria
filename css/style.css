@@ -973,6 +973,40 @@ footer div.copyright span {
   color: #FFFFFF;
 }
 
+#product-section .wrapper {
+  display: flex;
+}
+#product-section .wrapper .product-left {
+  display: flex;
+  flex-direction: column;
+  width: 5%;
+}
+#product-section .wrapper .product-left .product-images {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+#product-section .wrapper .product-left .product-images .image-products a.product-list-btn img {
+  width: 68px;
+  height: 68px;
+  border-radius: 9px;
+}
+#product-section .wrapper .product-left .product-button {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#product-section .wrapper .product-left .product-button a.up-button {
+  background: #FFFFFF;
+  width: 21px;
+  height: 21px;
+}
+#product-section .wrapper .product-middle {
+  width: 36%;
+}
+#product-section .wrapper .product-right {
+  width: 58%;
+}
 @media all and (max-width: 1280px) {
   header nav .header-middle ul.nav-links {
     gap: 15px;

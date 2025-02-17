@@ -1275,6 +1275,132 @@ footer {
     }
 }
 
+#product-section {
+    .wrapper {
+        display: flex;
+
+
+        .product-left {
+            display: flex;
+            flex-direction: column;
+
+            width: 5%;
+
+            .product-images {
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+
+                .image-products {
+                    a.product-list-btn {
+                        img {
+                            width: 68px;
+                            height: 68px;
+                            border-radius: 9px;
+                        }
+                    }
+                }
+            }
+
+            .product-button {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                a.up-button {
+                    background: #FFFFFF;
+                    width: 21px;
+                    height: 21px;
+
+                    img {}
+                }
+
+                a.down-arrow {
+                    img {}
+                }
+            }
+        }
+
+        .product-middle {
+            width: 36%;
+
+            img {}
+        }
+
+        .product-right {
+            width: 58%;
+
+            .product-top {
+                ul {
+                    li {
+                        a {
+                            img {}
+                        }
+                    }
+                }
+            }
+
+            h3.product-name {}
+
+            .product-rating {
+                a.product-ratingg {
+                    img {}
+                }
+            }
+
+            .product-sizes {
+                .product-size-top {
+                    h3 {}
+
+                    a {
+                        img {}
+                    }
+                }
+
+                .product-size-bottom {
+                    ul {
+                        li {
+                            a {}
+                        }
+                    }
+                }
+            }
+
+            .product-colors {
+                h3 {}
+
+                .colors {
+                    a.color {}
+
+                    a.red {}
+
+                    a.yellow {}
+
+                    a.purple {}
+
+                    a.black {}
+                }
+            }
+
+            .product-buy {
+                button.add-cart {
+                    img {}
+                }
+            }
+
+            .product-offers {
+                ul {
+                    li {
+                        img {}
+
+                        p {}
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media all and (max-width:1280px) {
     header nav .header-middle ul.nav-links {
         gap: 15px;
