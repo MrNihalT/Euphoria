@@ -398,6 +398,18 @@ header {
         display: flex;
         justify-content: space-between;
 
+        .deal-banner1 {
+            background: url(../assets/images/bg-2.jpg) no-repeat;
+            background-size: 1000px;
+            background-position-y: 6%;
+        }
+
+        .deal-banner2 {
+            background: url(../assets/images/bg-3.jpg) no-repeat;
+            background-size: 1000px;
+            background-position-y: 6%;
+        }
+
         .deal-banner {
             width: 48%;
             height: 356px;
@@ -2022,11 +2034,20 @@ footer {
 
     header nav .header-search form {
         width: 250px;
-
     }
 }
 
-@media all and (max-widdth:1024px) {
+@media all and (max-width:1180px) {
+    #deals .deal-section .deal-banner1 {
+        background-size: 750px;
+    }
+
+    #deals .deal-section .deal-banner2 {
+        background-size: 750px;
+    }
+}
+
+@media all and (max-width:1024px) {
     header nav .header-middle ul.nav-links {
         gap: 20px;
     }
@@ -2075,18 +2096,27 @@ footer {
 
     header nav .header-middle ul.nav-links li a {
         font-size: 16px;
-
     }
 
     header nav .header-middle ul.nav-links {
-
         gap: 10px;
     }
 
     header nav .header-left h1 {
         width: 70.16px;
         height: 40px;
+    }
 
+    #deals .deal-section .deal-banner1 {
+        background-size: 700px;
+    }
+
+    #deals .deal-section .deal-banner2 {
+        background-size: 700px;
+    }
+
+    #deals .deal-section .deal-banner h1 {
+        font-size: 30px;
     }
 }
 
@@ -2098,6 +2128,29 @@ footer {
     header nav .header-middle ul.nav-links {
         gap: 15px;
     }
+
+    #deals .deal-section {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        row-gap: 30px;
+    }
+
+    #deals .deal-section .deal-banner {
+        width: 100%;
+    }
+
+    #deals .deal-section .deal-banner1 {
+        background-size: 900px;
+    }
+
+    #deals .deal-section .deal-banner2 {
+        background-size: 900px;
+    }
+
+    #deals .deal-section .deal-banner h1 {
+        font-size: 34px;
+    }
 }
 
 @media all and (max-width:640px) {
@@ -2108,23 +2161,92 @@ footer {
     header nav .header-middle ul.nav-links {
         gap: 12px;
     }
+
+    #deals .deal-section .deal-banner {
+        width: 100%;
+    }
+
+    #deals .deal-section .deal-banner1 {
+        background-size: 700px;
+    }
+
+    #deals .deal-section .deal-banner2 {
+        background-size: 700px;
+    }
+
+    #deals .deal-section .deal-banner h1 {
+        font-size: 30px;
+    }
 }
 
 @media all and (max-width:540px) {
     .menubar {
         display: block !important;
     }
-
 }
 
 @media all and (max-width:480px) {
+    #deals .deal-section .deal-banner {
+        width: 100%;
+    }
+
+    #deals .deal-section .deal-banner1 {
+        background-size: 650px;
+    }
+
+    #deals .deal-section .deal-banner2 {
+        background-size: 650px;
+    }
+
+    #deals .deal-section .deal-banner h1 {
+        font-size: 26px;
+        max-width: 250px !important;
+    }
+
+    #deals .deal-section .deal-banner h3 {
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    #deals .deal-section .deal-banner p.offer {
+        font-weight: 500;
+        font-size: 14px;
+
+    }
 
     .nav-links li:nth-child(4) {
         display: none;
     }
 }
 
-@media all and (max-width:420px) {}
+@media all and (max-width:420px) {
+    #deals .deal-section .deal-banner {
+        width: 100%;
+    }
+
+    #deals .deal-section .deal-banner1 {
+        background-size: 550px;
+    }
+
+    #deals .deal-section .deal-banner2 {
+        background-size: 600px;
+    }
+
+    #deals .deal-section .deal-banner h1 {
+        font-size: 26px;
+        max-width: 250px !important;
+    }
+
+    #deals .deal-section .deal-banner h3 {
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    #deals .deal-section .deal-banner p.offer {
+        font-weight: 500;
+        font-size: 14px;
+    }
+}
 
 @media all and (max-width:380px) {
     .nav-links li:nth-child(5) {
@@ -2132,11 +2254,70 @@ footer {
     }
 }
 
-@media all and (max-width:360px) {}
+@media all and (max-width:360px) {
+    #deals .deal-section .deal-banner {
+        width: 100%;
+    }
+
+    #deals .deal-section .deal-banner1 {
+        background-size: 550px;
+    }
+
+    #deals .deal-section .deal-banner2 {
+        background-size: 580px;
+    }
+
+    #deals .deal-section .deal-banner h1 {
+        font-size: 24px;
+        max-width: 250px !important;
+    }
+
+    #deals .deal-section .deal-banner h3 {
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    #deals .deal-section .deal-banner p.offer {
+        font-weight: 500;
+        font-size: 14px;
+
+    }
+}
 
 @media all and (max-width:320px) {
     .nav-links li {
         display: none;
+    }
+
+    #deals .deal-section .deal-banner {
+        width: 100%;
+    }
+
+    #deals .deal-section .deal-banner1 {
+        background-size: 535px;
+
+    }
+
+    #deals .deal-section .deal-banner2 {
+        background-size: 535px;
+    }
+
+    #deals .deal-section .deal-banner h1 {
+        font-size: 26px;
+        max-width: 250px !important;
+    }
+
+    #deals .deal-section .deal-banner h3 {
+        font-weight: 600;
+        font-size: 16px;
+
+    }
+
+    #deals .deal-section .deal-banner p.offer {
+
+        font-weight: 500;
+        font-size: 14px;
+
     }
 }
 
