@@ -975,7 +975,6 @@ footer div.copyright span {
 
 #product-section {
   overflow: hidden;
-  height: calc(100vh - 108px);
   display: flex;
   border-top: 1px solid #BEBCBD;
 }
@@ -987,7 +986,6 @@ footer div.copyright span {
   background: #F6F6F6;
   padding-left: 5%;
   padding-right: 50px;
-  height: calc(100vh - 108px);
 }
 #product-section .product-left .product-images {
   display: flex;
@@ -1038,10 +1036,11 @@ footer div.copyright span {
 }
 #product-section .product-middle img {
   height: 100%;
-  width: 510px;
+  width: 520px;
 }
 #product-section .product-right {
-  padding: 2% 6%;
+  padding: 2% 5% 2% 6%;
+  width: 100%;
 }
 #product-section .product-right .product-top {
   margin-bottom: 35px;
@@ -1163,9 +1162,11 @@ footer div.copyright span {
   align-items: center;
   justify-content: center;
   border-radius: 12px;
+  overflow: hidden;
   border: 2px solid #BEBCBD;
 }
-#product-section .product-right .product-sizes .product-size-bottom ul li a {
+#product-section .product-right .product-sizes .product-size-bottom ul li button {
+  cursor: pointer;
   font-family: "Causten", serif;
   font-weight: 500;
   font-size: 14px;
@@ -1173,6 +1174,16 @@ footer div.copyright span {
   letter-spacing: 0%;
   text-align: center;
   color: #3C4242;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3 ease-in-out;
+}
+#product-section .product-right .product-sizes .product-size-bottom ul li .active {
+  width: 100%;
+  height: 100%;
+  background: #3C4242;
+  color: #FFFFFF;
+  transition: all 0.3 ease-in-out;
 }
 #product-section .product-right .product-colors {
   margin-bottom: 35px;
@@ -1191,28 +1202,336 @@ footer div.copyright span {
   align-items: center;
   gap: 20px;
 }
-#product-section .product-right .product-colors .colors a {
+#product-section .product-right .product-colors .colors button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: border 0.3s ease;
+}
+#product-section .product-right .product-colors .colors button span.color {
   width: 22px;
   height: 22px;
-}
-#product-section .product-right .product-colors .colors a:hover {
-  border: 1px solid #3F4646;
-}
-#product-section .product-right .product-colors .colors a.color {
   border-radius: 50%;
 }
-#product-section .product-right .product-colors .colors a.red {
+#product-section .product-right .product-colors .colors button span.red {
   background: #3C4242;
 }
-#product-section .product-right .product-colors .colors a.yellow {
+#product-section .product-right .product-colors .colors button span.yellow {
   background: #EDD146;
 }
-#product-section .product-right .product-colors .colors a.purple {
+#product-section .product-right .product-colors .colors button span.purple {
   background: #EB84B0;
 }
-#product-section .product-right .product-colors .colors a.black {
+#product-section .product-right .product-colors .colors button span.black {
   background: #9C1F35;
 }
+#product-section .product-right .product-colors .colors button.active {
+  border: 1px solid #3F4646;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+#product-section .product-right .product-buy {
+  padding-bottom: 40px;
+  margin-bottom: 35px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  border-bottom: 1px solid #BEBCBD;
+  border-widht: 534px;
+}
+#product-section .product-right .product-buy button.add-cart {
+  cursor: pointer;
+  width: 199px;
+  height: 46px;
+  border-radius: 8px;
+  padding: 12px 40px;
+  gap: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #8A33FD;
+  font-family: "Causten", serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21.6px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #FFFFFF;
+}
+#product-section .product-right .product-buy button.add-cart img {
+  width: 20px;
+  height: 20px;
+}
+#product-section .product-right .product-buy .product-price {
+  cursor: pointer;
+  width: 138px;
+  height: 46px;
+  left: 224px;
+  border-radius: 8px;
+  border-width: 1px;
+  padding: 12px 40px;
+  gap: 12px;
+  border: 1px solid #3C4242;
+  font-family: "Causten", serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21.6px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #3C4242;
+}
+#product-section .product-right .product-offers ul {
+  display: grid;
+  row-gap: 35px;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+#product-section .product-right .product-offers ul li {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+#product-section .product-right .product-offers ul li span {
+  background: #F6F6F6;
+  border-radius: 50%;
+  padding: 5px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#product-section .product-right .product-offers ul li span img {
+  width: 18px;
+  height: 18px;
+}
+#product-section .product-right .product-offers ul li p {
+  font-family: "Causten", serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21.6px;
+  letter-spacing: 0%;
+  color: #3C4242;
+}
+
+#product-description {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+#product-description .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+#product-description .wrapper .p-d-left h3.new-arrivalt {
+  display: flex;
+  margin: 0 0 30px 0;
+  font-family: "Montserrat", serif;
+  color: #3C4242;
+  font-weight: 650;
+  font-size: 34px;
+  line-height: 33.5px;
+  letter-spacing: 2%;
+}
+#product-description .wrapper .p-d-left h3.new-arrivalt div {
+  height: 30px;
+  width: 6px;
+  background: #8A33FD;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+#product-description .wrapper .p-d-left div.product-feedback div.top {
+  margin-bottom: 35px;
+}
+#product-description .wrapper .p-d-left div.product-feedback div.top ul {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+#product-description .wrapper .p-d-left div.product-feedback div.top ul li .d-button {
+  gap: 20px;
+  display: flex;
+  cursor: pointer;
+}
+#product-description .wrapper .p-d-left div.product-feedback div.top ul li .d-button h3.active {
+  font-family: "Causten", serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21.6px;
+  letter-spacing: 0%;
+  color: #3C4242;
+  border-bottom: 1.4px solid #000000;
+  border-bottom-width: 2px;
+  transition: border-bottom-width 0.3s ease-in-out;
+}
+#product-description .wrapper .p-d-left div.product-feedback div.top ul li .d-button h3 {
+  font-family: "Causten", serif;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 0 0 12px 0;
+  line-height: 21.6px;
+  color: #807D7E;
+  letter-spacing: 0%;
+}
+#product-description .wrapper .p-d-left div.product-feedback div.top ul li .d-button span {
+  background-color: #8A33FD;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  font-family: "Causten", serif;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #FFFFFF;
+}
+#product-description .wrapper .p-d-left div.product-feedback div.top ul li .d-button span.black {
+  background-color: #3C4242;
+}
+#product-description .wrapper .p-d-left div.product-feedback div.bottom p {
+  font-family: "Causten", serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 2%;
+  color: #807D7E;
+  max-width: 590px;
+}
+#product-description .wrapper div.p-d-right table.product-table {
+  width: 612px;
+  height: 185px;
+  border-radius: 12px;
+  background-color: #F6F6F6;
+  border-collapse: collapse;
+  border: 2px solid #F6F6F6;
+}
+#product-description .wrapper div.p-d-right table.product-table tr td {
+  padding: 4% 4%;
+  width: 33%;
+  border: 1px solid #d1d1d1;
+}
+#product-description .wrapper div.p-d-right table.product-table tr td h3 {
+  margin-bottom: 10px;
+  font-family: "Causten", serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 2%;
+  color: #807D7E;
+}
+#product-description .wrapper div.p-d-right table.product-table tr td p {
+  font-family: "Causten", serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 2%;
+  color: #3C4242;
+}
+
+#similar-products div.limelight {
+  margin-bottom: 80px;
+}
+#similar-products div.limelight h3.new-arrivalt {
+  display: flex;
+  margin: 0 0 30px 0;
+  font-family: "Causten", serif;
+  color: #3C4242;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 33.5px;
+  letter-spacing: 2%;
+}
+#similar-products div.limelight h3.new-arrivalt div {
+  height: 30px;
+  width: 6px;
+  background: #8A33FD;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+#similar-products div.limelight div.limelight-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 36px;
+}
+#similar-products div.limelight div.limelight-container div.limelight-items {
+  height: 441px;
+}
+#similar-products div.limelight div.limelight-container div.limelight-items div.top {
+  margin-bottom: 25px;
+  height: 370px;
+  width: 282px;
+  position: relative;
+}
+#similar-products div.limelight div.limelight-container div.limelight-items div.top img.main {
+  width: 282px;
+}
+#similar-products div.limelight div.limelight-container div.limelight-items div.top button.wishlist-btn {
+  cursor: pointer;
+  position: absolute;
+  width: 32.3592414856px;
+  height: 32.3592414856px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-out;
+}
+#similar-products div.limelight div.limelight-container div.limelight-items div.top button.wishlist-btn img.wishlist {
+  width: 13.7526769638px;
+  height: 12.224603653px;
+}
+#similar-products div.limelight div.limelight-container div.limelight-items div.bottom {
+  width: 282px;
+}
+#similar-products div.limelight div.limelight-container div.limelight-items div.bottom a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#similar-products div.limelight div.limelight-container div.limelight-items div.bottom a div.limelight-bottom-l h3 {
+  font-family: "Causten", serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19.2px;
+  letter-spacing: 0%;
+  color: #3C4242;
+}
+#similar-products div.limelight div.limelight-container div.limelight-items div.bottom a div.limelight-bottom-l p {
+  font-family: "Causten", serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16.8px;
+  letter-spacing: 0%;
+  color: #807D7E;
+}
+#similar-products div.limelight div.limelight-container div.limelight-items div.bottom a div.limelight-bottom-r p {
+  background: #F6F6F6;
+  width: 82px;
+  height: 36px;
+  color: #3C4242;
+  font-family: "Causten", serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16.8px;
+  letter-spacing: 0%;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
 @media all and (max-width: 1280px) {
   header nav .header-middle ul.nav-links {
     gap: 15px;

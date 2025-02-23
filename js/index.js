@@ -86,3 +86,36 @@ categoryButton.addEventListener("click", () => {
         arrowIcon.style.transform = "rotate(0deg)";
     }
 });
+
+let descriptionButton = document.querySelector(".d-button");
+
+document.querySelectorAll(".d-button").forEach((button) => {
+    button.addEventListener("click", () => {
+        document.querySelectorAll(".d-button h3").forEach((h3) => {
+            h3.classList.remove("active");
+        });
+        button.querySelector("h3").classList.add("active");
+    });
+});
+
+document
+    .querySelectorAll(".product-size-bottom ul li button")
+    .forEach((button) => {
+        button.addEventListener("click", () => {
+            document
+                .querySelectorAll(".product-size-bottom ul li button")
+                .forEach((btn) => {
+                    btn.classList.remove("active");
+                });
+            button.classList.add("active");
+        });
+    });
+
+document.querySelectorAll(".colors button").forEach((button) => {
+    button.addEventListener("click", () => {
+        document.querySelectorAll(".colors button").forEach((btn) => {
+            btn.classList.remove("active");
+        });
+        button.classList.add("active");
+    });
+});
