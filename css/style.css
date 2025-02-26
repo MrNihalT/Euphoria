@@ -513,11 +513,11 @@ header nav .menubar {
   margin-bottom: 100px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 50px;
+  gap: 35px;
   justify-content: center;
 }
 #categories div.category-men div.category-item {
-  width: 270px;
+  width: 260px;
   height: 451px;
   gap: 15px;
   display: flex;
@@ -572,13 +572,13 @@ header nav .menubar {
   margin-bottom: 80px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 50px;
+  gap: 30px;
   justify-content: center;
 }
 #categories div.category-women div.category-item {
-  width: 270px;
+  width: 260px;
   height: 451px;
-  gap: 15px;
+  gap: 10px;
   display: flex;
   flex-direction: column;
 }
@@ -1549,6 +1549,39 @@ footer div.copyright span {
   header nav .header-search form {
     width: 250px;
   }
+  #deals .deal-section .deal-banner1 {
+    background-size: 850px;
+  }
+  #deals .deal-section .deal-banner2 {
+    background-size: 850px;
+  }
+  #categories div.category-men div.category-item {
+    width: 240px;
+    height: 451px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  #categories div.category-men {
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    row-gap: 40px;
+    justify-content: center;
+  }
+  #categories div.category-women div.category-item {
+    width: 250px;
+    height: 451px;
+    gap: 5px;
+  }
+  #categories div.category-women {
+    margin-bottom: 80px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+  }
 }
 @media all and (max-width: 1180px) {
   #deals .deal-section .deal-banner1 {
@@ -1556,6 +1589,33 @@ footer div.copyright span {
   }
   #deals .deal-section .deal-banner2 {
     background-size: 750px;
+  }
+  #categories div.category-men div.category-item {
+    width: 210px;
+    height: 451px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  #categories div.category-men {
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    row-gap: 40px;
+    justify-content: center;
+  }
+  #categories div.category-women div.category-item {
+    width: 220px;
+    height: 451px;
+    gap: 5x;
+  }
+  #categories div.category-women {
+    margin-bottom: 80px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-content: center;
   }
 }
 @media all and (max-width: 1024px) {
@@ -1570,6 +1630,33 @@ footer div.copyright span {
   }
   header nav .header-search form {
     width: 240px;
+  }
+  #categories div.category-men div.category-item {
+    width: 200px;
+    height: 451px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  #categories div.category-men {
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    row-gap: 40px;
+    justify-content: center;
+  }
+  #categories div.category-women div.category-item {
+    width: 210px;
+    height: 451px;
+    gap: 5px;
+  }
+  #categories div.category-women {
+    margin-bottom: 80px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    justify-content: center;
   }
 }
 @media all and (max-width: 980px) {
@@ -1615,6 +1702,68 @@ footer div.copyright span {
   #deals .deal-section .deal-banner h1 {
     font-size: 30px;
   }
+  #spotlight .spotlight-slider .spotlight-content .slide {
+    background-size: 1000px;
+    background-position: left;
+  }
+  #deals .new-arrival div.new-arrival-collection div.new-arrival-item a {
+    width: 220px;
+    height: 220px;
+    border-radius: 12px;
+    display: block;
+  }
+  #deals .new-arrival div.new-arrival-collection {
+    height: 320px;
+  }
+  #deals .new-arrival {
+    margin-bottom: 80px;
+  }
+  #deals h3.new-arrivalt {
+    display: flex;
+    margin: 100px 0 10px 0;
+  }
+  #deals .deal-fashion .fashion-left {
+    position: relative;
+    width: 49%;
+    padding: 0 30px;
+  }
+  #deals .deal-fashion .fashion-left h1 {
+    font-family: "Montserrat", serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0.21px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+  }
+  #categories div.category-men div.category-item {
+    width: 220px;
+    height: 451px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  #categories div.category-men {
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    row-gap: 40px;
+    justify-content: center;
+  }
+  #categories div.category-women div.category-item {
+    width: 290px;
+    height: 451px;
+    gap: 5px;
+  }
+  #categories div.category-women {
+    margin-bottom: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+    justify-content: center;
+    justify-self: center;
+  }
 }
 @media all and (max-width: 768px) {
   .header-search {
@@ -1641,6 +1790,71 @@ footer div.copyright span {
   #deals .deal-section .deal-banner h1 {
     font-size: 34px;
   }
+  #spotlight .spotlight-slider .spotlight-content .slide {
+    background-size: 1000px;
+    background-position: left;
+    background-size: cover;
+  }
+  #categories div.category-men div.category-item {
+    width: 270px;
+    height: 451px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  #categories div.category-men {
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    row-gap: 40px;
+    justify-content: center;
+  }
+  #deals .deal-fashion {
+    margin: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    overflow: hidden;
+  }
+  #deals .deal-fashion {
+    margin: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 8px;
+    align-items: center;
+    overflow: hidden;
+    height: 1000px;
+  }
+  #deals .deal-fashion .fashion-left {
+    position: relative;
+    width: 100%;
+    padding: 50px 30px;
+    height: 50%;
+  }
+  #deals .deal-fashion .fashion-right {
+    width: 100%;
+    background: url(../assets/images/bg-5.jpg) no-repeat center top;
+    background-size: cover;
+    height: 50%;
+    border-radius: 0;
+  }
+  #deals .deal-fashion .fashion-left h1 {
+    margin-bottom: 30px;
+  }
+  #categories div.category-women div.category-item {
+    width: 270px;
+    height: 451px;
+    gap: 5px;
+  }
+  #categories div.category-women {
+    margin-bottom: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+    justify-content: center;
+    justify-self: center;
+  }
 }
 @media all and (max-width: 640px) {
   .header-right {
@@ -1661,10 +1875,99 @@ footer div.copyright span {
   #deals .deal-section .deal-banner h1 {
     font-size: 30px;
   }
+  #spotlight .spotlight-slider .spotlight-content .slide {
+    background-size: 900px;
+    background-position: left;
+    background-size: cover;
+  }
+  #categories div.category-men div.category-item {
+    width: 230px;
+    height: 451px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  #categories div.category-men {
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    row-gap: 40px;
+    justify-content: center;
+  }
+  #categories div.category-women div.category-item {
+    width: 230px;
+    height: 451px;
+    gap: 5px;
+  }
+  #categories div.category-women {
+    margin-bottom: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    justify-self: center;
+  }
 }
 @media all and (max-width: 540px) {
   .menubar {
     display: block !important;
+  }
+  #spotlight .spotlight-slider .spotlight-content .slide {
+    background-size: 900px;
+    background-position: center;
+    background-size: cover;
+  }
+  #spotlight .spotlight-slider .spotlight-content .slide h1 {
+    font-family: "Causten", serif;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.31px;
+    color: #FFFFFF;
+    max-width: 400px;
+    margin-bottom: 25px;
+  }
+  #spotlight .spotlight-slider .spotlight-content .slide .shop-now {
+    font-family: "Causten", serif;
+    font-weight: 700;
+    font-size: 22px;
+    position: absolute;
+    bottom: 120px;
+  }
+  #spotlight .spotlight-slider .left-arrow img,
+  #spotlight .spotlight-slider .right-arrow img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3sease;
+  }
+  #categories div.category-men div.category-item {
+    width: 200px;
+    height: 451px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  #categories div.category-men {
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    row-gap: 40px;
+    justify-content: center;
+  }
+  #categories div.category-women div.category-item {
+    width: 210px;
+    height: 451px;
+    gap: 5px;
+  }
+  #categories div.category-women {
+    margin-bottom: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-content: center;
+    justify-self: center;
   }
 }
 @media all and (max-width: 480px) {
@@ -1692,6 +1995,35 @@ footer div.copyright span {
   .nav-links li:nth-child(4) {
     display: none;
   }
+  #categories div.category-men div.category-item {
+    width: 290px;
+    height: 451px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  #categories div.category-men {
+    margin-bottom: 100px;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    row-gap: 80px;
+    justify-content: center;
+  }
+  #categories div.category-women div.category-item {
+    width: 280px;
+    height: 451px;
+    gap: 5px;
+  }
+  #categories div.category-women {
+    margin-bottom: 80px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 60px;
+    justify-content: center;
+    justify-self: center;
+  }
 }
 @media all and (max-width: 420px) {
   #deals .deal-section .deal-banner {
@@ -1715,10 +2047,84 @@ footer div.copyright span {
     font-weight: 500;
     font-size: 14px;
   }
+  #deals .deal-fashion {
+    margin: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 8px;
+    align-items: center;
+    overflow: hidden;
+    height: 1000px;
+  }
+  #deals .deal-fashion .fashion-left {
+    position: relative;
+    width: 100%;
+    padding: 40px 20px;
+    height: 50%;
+  }
+  #deals .deal-fashion .fashion-right {
+    width: 100%;
+    background: url(../assets/images/bg-5.jpg) no-repeat center top;
+    background-size: cover;
+    height: 50%;
+    border-radius: 0;
+  }
+  #deals .deal-fashion .fashion-left h1 {
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
 }
 @media all and (max-width: 380px) {
   .nav-links li:nth-child(5) {
     display: none;
+  }
+  #spotlight .spotlight-slider .spotlight-content .slide h1 {
+    font-family: "Causten", serif;
+    font-weight: 900;
+    font-size: 38px;
+    line-height: 60px;
+    letter-spacing: 0.31px;
+    color: #FFFFFF;
+    max-width: 400px;
+    margin-bottom: 25px;
+  }
+  #spotlight .spotlight-slider .spotlight-content .slide .spotlight-items {
+    font-family: "Causten", serif;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 47.21px;
+    letter-spacing: 0.31px;
+    margin-bottom: 50px;
+  }
+  #spotlight .spotlight-slider .spotlight-content .slide h3 {
+    font-family: "Causten", serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 37.77px;
+    letter-spacing: 0.16px;
+    color: #FFFFFF;
+    margin-bottom: 35px;
+  }
+  #spotlight .spotlight-slider .spotlight-content .slide .shop-now {
+    font-family: "Causten", serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28.8px;
+    letter-spacing: 0%;
+    color: #3C4242;
+    text-align: center;
+    width: 200px;
+    height: 61px;
+    border-radius: 8px;
+    padding-top: 16px;
+    padding-right: 52px;
+    padding-bottom: 16px;
+    padding-left: 52px;
+    gap: 12px;
+    background: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.3sease;
   }
 }
 @media all and (max-width: 360px) {
@@ -1742,6 +2148,99 @@ footer div.copyright span {
   #deals .deal-section .deal-banner p.offer {
     font-weight: 500;
     font-size: 14px;
+  }
+  #spotlight .spotlight-slider .spotlight-content .slide h3 {
+    font-family: "Causten", serif;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 37.77px;
+    letter-spacing: 0.16px;
+    color: #FFFFFF;
+    margin-bottom: 45px;
+  }
+  #spotlight .spotlight-slider .spotlight-content .slide .spotlight-items {
+    font-family: "Causten", serif;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 47.21px;
+    letter-spacing: 0.31px;
+    margin-bottom: 50px;
+  }
+  #spotlight .spotlight-slider .spotlight-content .slide .shop-now {
+    font-family: "Causten", serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28.8px;
+    letter-spacing: 0%;
+    color: #3C4242;
+    text-align: center;
+    width: 150px;
+    height: 61px;
+    border-radius: 8px;
+    padding-top: 8px;
+    padding-right: 28px;
+    padding-bottom: 8px;
+    padding-left: 28px;
+    height: 50px;
+    gap: 12px;
+    background: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.3sease;
+  }
+  #spotlight .spotlight-slider .spotlight-content .slide h1 {
+    font-family: "Causten", serif;
+    font-weight: 900;
+    font-size: 34px;
+    line-height: 60px;
+    letter-spacing: 0.31px;
+    color: #FFFFFF;
+    max-width: 400px;
+    margin-bottom: 25px;
+    line-height: 30px;
+    margin-bottom: 40px;
+  }
+  #categories div.category-men div.category-item {
+    width: 280px;
+    height: 451px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  #categories div.category-men {
+    margin-bottom: 100px;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    row-gap: 80px;
+    justify-content: center;
+  }
+  #deals .deal-fashion {
+    margin: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 8px;
+    align-items: center;
+    overflow: hidden;
+    height: 1000px;
+  }
+  #deals .deal-fashion .fashion-left {
+    position: relative;
+    width: 100%;
+    padding: 40px 20px;
+    height: 50%;
+  }
+  #deals .deal-fashion .fashion-right {
+    width: 100%;
+    background: url(../assets/images/bg-5.jpg) no-repeat center top;
+    background-size: cover;
+    height: 50%;
+    border-radius: 0;
+  }
+  #deals .deal-fashion .fashion-left h1 {
+    margin-bottom: 30px;
+    font-size: 26px;
   }
 }
 @media all and (max-width: 320px) {
@@ -1768,6 +2267,39 @@ footer div.copyright span {
   #deals .deal-section .deal-banner p.offer {
     font-weight: 500;
     font-size: 14px;
+  }
+  #categories div.category-men div.category-item {
+    width: 90%;
+    height: 451px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  #categories div.category-men {
+    margin-bottom: 100px;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    row-gap: 80px;
+    justify-content: center;
+  }
+  #deals .deal-fashion .fashion-left h1 {
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+  #categories div.category-women div.category-item {
+    width: 260px;
+    height: 451px;
+    gap: 5px;
+  }
+  #categories div.category-women {
+    margin-bottom: 80px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 60px;
+    justify-content: center;
+    justify-self: center;
   }
 }
 @keyframes fadOut {
