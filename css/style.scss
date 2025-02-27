@@ -874,8 +874,8 @@ header {
         div.limelight-container {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 36px;
-
+            gap: 15px;
+            justify-items: center;
 
             div.limelight-items {
                 // width: 282px;
@@ -885,11 +885,11 @@ header {
                 div.top {
                     margin-bottom: 25px;
                     height: 370px;
-                    width: 282px;
+                    width: 250px;
                     position: relative;
 
                     img.main {
-                        width: 282px;
+                        width: 250px;
                     }
 
                     button.wishlist-btn {
@@ -909,16 +909,13 @@ header {
                         img.wishlist {
                             width: 13.752676963806152px;
                             height: 12.224603652954102px;
-
-
-
                         }
                     }
 
                 }
 
                 div.bottom {
-                    width: 282px;
+                    width: 250px;
 
                     a {
                         display: flex;
@@ -2119,6 +2116,37 @@ footer {
         gap: 10px;
         justify-content: center;
     }
+
+    #categories div.brands ul li {
+        width: 160px;
+        height: 85px;
+    }
+
+    #categories div.brands ul {
+        gap: 15px;
+    }
+
+    #categories div.limelight div.limelight-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        justify-items: center;
+    }
+
+    #categories div.limelight div.limelight-container div.limelight-items div.top {
+        margin-bottom: 10px;
+        height: 290px;
+        width: 220px;
+        position: relative;
+    }
+
+    #categories div.limelight div.limelight-container div.limelight-items div.top img.main {
+        width: 100%;
+    }
+
+    #categories div.limelight div.limelight-container div.limelight-items div.bottom {
+        width: 220px;
+    }
 }
 
 @media all and (max-width:1024px) {
@@ -2169,6 +2197,42 @@ footer {
         grid-template-columns: repeat(4, 1fr);
         gap: 5px;
         justify-content: center;
+    }
+
+    #categories div.brands ul li {
+        width: 150px;
+        height: 80px;
+    }
+
+    #categories div.brands ul {
+        gap: 15px;
+    }
+
+    #categories div.limelight div.limelight-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        justify-items: center;
+
+    }
+
+    #categories div.limelight div.limelight-container div.limelight-items div.top {
+        margin-bottom: 10px;
+        height: 270px;
+        width: 200px;
+        position: relative;
+    }
+
+    #categories div.limelight div.limelight-container div.limelight-items div.top img.main {
+        width: 100%;
+    }
+
+    #categories div.limelight div.limelight-container div.limelight-items div.bottom {
+        width: 200px;
+    }
+
+    #categories div.limelight div.limelight-container div.limelight-items {
+        height: 341px;
     }
 }
 
@@ -2303,6 +2367,55 @@ footer {
         justify-content: center;
         justify-self: center;
     }
+
+    #categories div.brands {
+        height: 460px;
+
+    }
+
+    #categories div.brands ul {
+        display: flex;
+        gap: 20px;
+        justify-self: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #categories div.brands ul li {
+        align-content: center;
+        border-radius: 12px;
+        width: 177px;
+        height: 85px;
+        background: #FFFFFF;
+    }
+
+    #categories div.limelight div.limelight-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        justify-items: center;
+
+    }
+
+    #categories div.limelight div.limelight-container div.limelight-items div.top {
+        margin-bottom: 10px;
+        height: 380px;
+        width: 280px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #categories div.limelight div.limelight-container div.limelight-items div.top img.main {
+        width: 100%;
+    }
+
+    #categories div.limelight div.limelight-container div.limelight-items div.bottom {
+        width: 280px;
+    }
+
+    #categories div.limelight div.limelight-container div.limelight-items {
+        height: 480px;
+    }
 }
 
 @media all and (max-width:768px) {
@@ -2415,6 +2528,18 @@ footer {
         justify-content: center;
         justify-self: center;
     }
+
+    #categories div.brands {
+        height: 450px;
+
+    }
+
+
+    #categories div.brands ul li {
+        width: 160px;
+        height: 80px;
+
+    }
 }
 
 @media all and (max-width:640px) {
@@ -2481,6 +2606,54 @@ footer {
         justify-content: center;
         justify-self: center;
     }
+
+    #categories div.brands {
+        height: 560px;
+
+    }
+
+    #categories div.brands ul {
+        display: flex;
+        gap: 20px;
+        justify-self: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #categories div.brands ul li {
+
+        width: 177px;
+        height: 85px;
+
+    }
+
+    #categories div.limelight div.limelight-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        justify-items: center;
+
+    }
+
+    #categories div.limelight div.limelight-container div.limelight-items div.top {
+        margin-bottom: 10px;
+        height: 310px;
+        width: 220px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #categories div.limelight div.limelight-container div.limelight-items div.top img.main {
+        width: 100%;
+    }
+
+    #categories div.limelight div.limelight-container div.limelight-items div.bottom {
+        width: 220px;
+    }
+
+    #categories div.limelight div.limelight-container div.limelight-items {
+        height: 430px;
+    }
 }
 
 @media all and (max-width:540px) {
@@ -2504,8 +2677,6 @@ footer {
         max-width: 400px;
         margin-bottom: 25px;
     }
-
-
 
     #spotlight .spotlight-slider .spotlight-content .slide .shop-now {
         font-family: "Causten", serif;
@@ -2555,6 +2726,35 @@ footer {
         justify-content: center;
         justify-self: center;
     }
+
+    #categories div.limelight div.limelight-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        justify-items: center;
+
+    }
+
+    #categories div.limelight div.limelight-container div.limelight-items div.top {
+        margin-bottom: 10px;
+        height: 300px;
+        width: 210px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #categories div.limelight div.limelight-container div.limelight-items div.top img.main {
+        width: 100%;
+    }
+
+    #categories div.limelight div.limelight-container div.limelight-items div.bottom {
+        width: 210px;
+    }
+
+    #categories div.limelight div.limelight-container div.limelight-items {
+        height: 410px;
+    }
+
 }
 
 @media all and (max-width:480px) {
@@ -2623,6 +2823,58 @@ footer {
         gap: 60px;
         justify-content: center;
         justify-self: center;
+    }
+
+    #categories div.brands {
+        height: 560px;
+    }
+
+    #categories div.brands h1 {
+        font-weight: 800;
+        font-size: 42px;
+        line-height: 49.1px;
+        margin-bottom: 30px;
+    }
+
+    #categories div.brands ul {
+        display: flex;
+        gap: 10px;
+        justify-self: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #categories div.brands ul li {
+        width: 160px;
+        height: 85px;
+    }
+
+    #categories div.limelight div.limelight-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        justify-items: center;
+
+    }
+
+    #categories div.limelight div.limelight-container div.limelight-items div.top {
+        margin-bottom: 10px;
+        height: 380px;
+        width: 280px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #categories div.limelight div.limelight-container div.limelight-items div.top img.main {
+        width: 100%;
+    }
+
+    #categories div.limelight div.limelight-container div.limelight-items div.bottom {
+        width: 280px;
+    }
+
+    #categories div.limelight div.limelight-container div.limelight-items {
+        height: 450px;
     }
 
 }
@@ -2744,6 +2996,37 @@ footer {
         cursor: pointer;
         transition: all 0.3sease;
     }
+
+    #categories div.brands {
+        height: 720px;
+    }
+
+    #categories div.brands h1 {
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 49.1px;
+        margin-bottom: 20px;
+    }
+
+    #categories div.brands p {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 26.4px;
+        margin-bottom: 45px;
+    }
+
+    #categories div.brands ul {
+        display: flex;
+        gap: 20px;
+        justify-self: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #categories div.brands ul li {
+        width: 177px;
+        height: 85px;
+    }
 }
 
 @media all and (max-width:360px) {
@@ -2774,7 +3057,6 @@ footer {
         font-size: 14px;
 
     }
-
 
     #spotlight .spotlight-slider .spotlight-content .slide h3 {
         font-family: "Causten", serif;
@@ -2839,7 +3121,6 @@ footer {
         flex-direction: column;
     }
 
-
     #categories div.category-men {
         margin-bottom: 100px;
         display: grid;
@@ -2879,6 +3160,25 @@ footer {
         margin-bottom: 30px;
         font-size: 26px;
     }
+
+    #categories div.brands {
+        height: 720px;
+    }
+
+    #categories div.brands h1 {
+        font-weight: 800;
+        font-size: 34px;
+        line-height: 49.1px;
+        margin-bottom: 20px;
+    }
+
+    #categories div.brands p {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26.4px;
+        margin-bottom: 45px;
+    }
+
 }
 
 @media all and (max-width:320px) {
@@ -2955,6 +3255,48 @@ footer {
         gap: 60px;
         justify-content: center;
         justify-self: center;
+    }
+
+    #categories div.brands h1 {
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 49.1px;
+        margin-bottom: 20px;
+    }
+
+    #categories div.brands p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26.4px;
+        margin-bottom: 45px;
+    }
+
+    #categories div.limelight div.limelight-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        justify-items: center;
+
+    }
+
+    #categories div.limelight div.limelight-container div.limelight-items div.top {
+        margin-bottom: 10px;
+        height: 350px;
+        width: 250px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #categories div.limelight div.limelight-container div.limelight-items div.top img.main {
+        width: 100%;
+    }
+
+    #categories div.limelight div.limelight-container div.limelight-items div.bottom {
+        width: 250px;
+    }
+
+    #categories div.limelight div.limelight-container div.limelight-items {
+        height: 440px;
     }
 }
 
