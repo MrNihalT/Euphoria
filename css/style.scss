@@ -49,7 +49,7 @@ body {
 }
 
 .boundry {
-    padding: 0 70px;
+    padding: 0 50px;
 }
 
 
@@ -981,7 +981,7 @@ header {
 
             div.feedback-items {
                 width: 396.87408447265625px;
-                height: 292.00469970703125px;
+
                 gap: 20px;
                 border-radius: 10px;
                 border-width: 1.8px;
@@ -2025,6 +2025,25 @@ footer {
 
 
 @media all and (max-width:1280px) {
+    footer div.footer-items ul li a {
+        font-family: "Montserrat", serif;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 39.04px;
+        letter-spacing: 0%;
+        color: #F6F6F6;
+    }
+
+    footer div.footer-items ul li h3 {
+        margin-bottom: 20px;
+        font-family: "Montserrat", serif;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 61.99px;
+        letter-spacing: 0%;
+        color: #F6F6F6;
+    }
+
     header nav .header-middle ul.nav-links {
         gap: 15px;
     }
@@ -2072,6 +2091,14 @@ footer {
         grid-template-columns: repeat(4, 1fr);
         gap: 20px;
         justify-content: center;
+    }
+
+    #categories div.feedback-section div.feedbacks div.feedback-items div.feedback-top div.left h3 {
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 21.6px;
+        letter-spacing: 2%;
     }
 }
 
@@ -2146,6 +2173,34 @@ footer {
 
     #categories div.limelight div.limelight-container div.limelight-items div.bottom {
         width: 220px;
+    }
+
+    #categories div.feedback-section div.feedbacks div.feedback-items div.feedback-top div.left h3 {
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 20.6px;
+        letter-spacing: 1%;
+        text-align: left;
+    }
+
+    footer div.footer-items ul li a {
+        font-family: "Montserrat", serif;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 39.04px;
+        letter-spacing: 0%;
+        color: #F6F6F6;
+    }
+
+    footer div.footer-items ul li h3 {
+        margin-bottom: 20px;
+        font-family: "Montserrat", serif;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 61.99px;
+        letter-spacing: 0%;
+        color: #F6F6F6;
     }
 }
 
@@ -2416,6 +2471,47 @@ footer {
     #categories div.limelight div.limelight-container div.limelight-items {
         height: 480px;
     }
+
+    #categories div.feedback-section div.feedbacks {
+        display: flex;
+        justify-content: center;
+        gap: 23px;
+        flex-wrap: wrap;
+    }
+
+    #categories div.feedback-section div.feedbacks div.feedback-items {
+        width: 48%;
+        gap: 20px;
+        border-radius: 10px;
+        border-width: 1.8px;
+        padding: 23.19px;
+        border: 1.8px solid #BEBCBD;
+    }
+
+    footer div.footer-items ul {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    footer div.footer-items ul li h3 {
+        margin-bottom: 20px;
+        font-family: "Montserrat", serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 61.99px;
+        letter-spacing: 0%;
+        color: #F6F6F6;
+    }
+
+    footer div.footer-items ul li a {
+        font-family: "Montserrat", serif;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 39.04px;
+        letter-spacing: 0%;
+        color: #F6F6F6;
+    }
 }
 
 @media all and (max-width:768px) {
@@ -2653,6 +2749,15 @@ footer {
 
     #categories div.limelight div.limelight-container div.limelight-items {
         height: 430px;
+    }
+
+    #categories div.feedback-section div.feedbacks div.feedback-items {
+        width: 100%;
+        gap: 20px;
+        border-radius: 10px;
+        border-width: 1.8px;
+        padding: 23.19px;
+        border: 1.8px solid #BEBCBD;
     }
 }
 
