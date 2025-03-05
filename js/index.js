@@ -119,3 +119,20 @@ document.querySelectorAll(".colors button").forEach((button) => {
         button.classList.add("active");
     });
 });
+
+const menuButton = document.getElementById("menu-button");
+const mobileMenu = document.querySelector(".mobile-menu");
+
+menuButton.addEventListener("click", function (event) {
+    event.stopPropagation();
+    mobileMenu.classList.toggle("active");
+});
+
+document.addEventListener("click", function (event) {
+    if (
+        !mobileMenu.contains(event.target) &&
+        !menuButton.contains(event.target)
+    ) {
+        mobileMenu.classList.remove("active");
+    }
+});
